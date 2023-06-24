@@ -6,9 +6,16 @@ public class Main {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
         BookShelf bookShelf = new BookShelf(3);
-        bookShelf.appendBook(new Book("Node.js 백엔드 개발자 되기"));
-        bookShelf.appendBook(new Book("Spring in Action"));
-        bookShelf.appendBook(new Book("Java 언어로 배우는 디자인 패턴 입문"));
+
+        String[] strs = {
+                "Node.js 백엔드 개발자 되기",
+                "Spring in Action",
+                "Java 언어로 배우는 디자인 패턴 입문"
+        };
+        
+        for (String s : strs) {
+            bookShelf.appendBook(new Book(s));
+        }
 
         // 명시적으로 Iterator를 사용
         Iterator<Book> it = bookShelf.iterator();
