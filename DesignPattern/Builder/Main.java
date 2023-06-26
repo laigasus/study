@@ -27,9 +27,16 @@ public class Main {
 
     }
 
-    // 사용방법을 표시한다
     public static void usage() {
         System.out.println("Usage: hava Main text\t 텍스트로 문서 작성");
         System.out.println("Usage: hava Main html\t HTML 파일로 문서 작성");
     }
+
+    // 대표적으로 StringBuilder가 있음
+
+    // 고정된 매개변수 생성자의 경우 순차적 대입, 혹은 다른 생성자를 추가 생성해야 함
+    // new Person(int age, int height, String name);
+
+    // Builder의 경우 필요한 만큼 매개변수 삽입. 순서 제약 없어 유연함
+    // Person.builder().name("hong").age(2).height(222).build();
 }
