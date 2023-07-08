@@ -1,3 +1,5 @@
+package Java.CreateInstance;
+
 public class UsingNewInstance {
     public static void main(String[] args) throws Exception {
         Class[] cArgs = { String.class, int.class };

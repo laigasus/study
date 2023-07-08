@@ -1,3 +1,5 @@
+package Java.CreateInstance;
+
 import java.util.function.Supplier;
 
 public class UsingSupplier {

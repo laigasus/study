@@ -1,3 +1,5 @@
+package Java.CreateInstance;
+
 public class Book implements Cloneable {
     String name;
     int price;
